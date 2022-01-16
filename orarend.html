@@ -2,104 +2,158 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Órarend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Old+Standard+TT&display=swap" rel="stylesheet">
     <style>
-        table, th, td {
-            border: 2px solid rgb(252, 253, 255);
-        }
-
-        table {
-            width: 60%;
-            border-collapse: collapse;
-            text-align: center;
-        }
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    
+    .sidebar {
+      font-family: 'Mochiy Pop P One', sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #b32e4f;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: greenyellow;
+      padding: 16px;
+      text-decoration: none;
+    }
+     
+    .sidebar a.active {
+      background-color: #66043d;
+      color: white;
+    }
+    
+    .sidebar a:hover:not(.active) {
+      background-color: rgb(56, 13, 26);
+      color: greenyellow;
+    }
+    
+    div.content {
+      font-family: 'Mochiy Pop P One', sans-serif;
+font-family: 'Old Standard TT', serif;
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+    
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
     </style>
 </head>
-<body>
-    <table style="background-color:rgb(255, 255, 255);">
-     <tr>
-         <th>Óraszám</th>
-         <th>Időpont</th>
-         <th>Hétfő</th>
-         <th>Kedd</th>
-         <th>Szerda</th>
-         <th>Csütörtök</th>
-         <th>Péntek</th>
-     </tr>
-     <tr>
-         <td>0.</td>
-         <td>7:15 - 8:00</td>
-         <td>Programozási alapok</td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td>Tesnevelés</td>
-     </tr>
-     <tr>
-         <td>1.</td>
-         <td>8:00 - 8:45</td>
-         <td>Programozási alapok</td>
-         <td>Angol</td>
-         <td>Matek</td>
-         <td>Magyar</td>
-         <td>Tesnevelés</td>
-     </tr>
-     <tr>
-         <td>2.</td>
-         <td>8:55 - 9:40</td>
-         <td>Komplex természettudomány</td>
-         <td>Magyar</td>
-         <td>Matek</td>
-         <td>Matek</td>
-         <td>Informatika és távközlés</td>
-        </tr>
-         <tr>
-             <td>3.</td>
-             <td>9:50 - 10:35</td>
-             <td>Angol</td>
-             <td>Osztályfönöki</td>
-             <td>Tesnevelés</td>
-             <td>Történelem</td>
-             <td>Történelem</td>
-         </tr>
+<body style="background-color: darksalmon;">
+<div class="sidebar">
+        <a href="https://eszter691.github.io/kollazs/">Kollázs</a>
+        <a href="https://eszter691.github.io/kollazs/keplink.html">Képlink</a>
+        <a href="https://eszter691.github.io/listak/">Listák</a>
+        <a class="active" href="https://eszter691.github.io/orarend/">Órarend</a>
+      </div>
+
+<div class="content">
+<h1 style="color: darkslategrey;" align="center">Az órarendem</h1>
+<table border="4" style="background-color: cyan; text-align: center" align="center"> 
+    <th>
+        <td>Hétfő</td>
+        <td>Kedd</td>
+        <td>Szerda</td>
+        <td>Csütörtök</td>
+        <td>Péntek</td>
+    </th>
+    <tr>
+        <td>0.</td>
+        <td>Programozási alapok</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>Testnevelés</td>
+    </tr>
+    <tr>
+        <td>1.</td>
+        <td>Programozási alapok</td>
+        <td>Angol nyelv</td>
+        <td>Matematika</td>
+        <td>Magyar nyelv és irodalom</td>
+        <td>Testnevelés</td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>Komplex természettudomány</td>
+        <td>Magyar nyelv és irodalom</td>
+        <td>Matematika(komp)</td>
+        <td>Matematika</td>
+        <td>IKT projektmunka</td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td>Angol nyelv</td>
+        <td>Osztályfőnöki</td>
+        <td>Testnevelés</td>
+        <td>Történelem</td>
+        <td>Történelem</td>
+    </tr>
     <tr>
         <td>4.</td>
-        <td>10:45 - 11:30</td>
         <td>Informatika és távközlés</td>
-        <td>Komplex természettudodomány</td>
-        <td>Komplex természettudodomány</td>
-        <td>Angol</td>
-        <td>Matek</td>
+        <td>Komplex természettudomány</td>
+        <td>Komplex természettudomány</td>
+        <td>Angol nyelv</td>
+        <td>Matematika</td>
     </tr>
     <tr>
         <td>5.</td>
-        <td>11:40 - 12:25</td>
         <td>Informatika és távközlés</td>
-        <td>Magyar</td>
-        <td>Magyar</td>
-        <td>Tesnevelés</td>
-        <td>Magyar</td>
+        <td>Magyar nyelv(komp)</td>
+        <td>Magyar nyelv és irodalom</td>
+        <td>Testnevelés</td>
+        <td>Magyar nyelv és irodalom</td>
     </tr>
     <tr>
         <td>6.</td>
-        <td>12:45 - 13:30</td>
         <td>Informatika és távközlés</td>
-        <td>Matek</td>
-        <td>Törénelem</td>
-        <td>Magyar</td>
-        <td>Digitális Kultúra</td>
+        <td>Matematika</td>
+        <td>Történelem</td>
+        <td>&nbsp;</td>
+        <td>Digitális kultúra</td>
     </tr>
     <tr>
         <td>7.</td>
-        <td>13:35 - 14:20</td>
-        <td></td>
-        <td>Informatika és távlözlés</td>
-        <td>Angol</td>
-        <td></td>
+        <td>&nbsp;</td>
+        <td>IKT projektmunka</td>
+        <td>Angol nyelv</td>
+        <td>&nbsp;</td>
         <td>Digitális kultúra</td>
     </tr>
-    </table>
-    
+</div>
+</table>
 </body>
 </html>
