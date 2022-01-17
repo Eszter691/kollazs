@@ -1,89 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>Eszter oldala</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet"> 
-<style>
-    body {
-      margin: 0;
-      font-family: "Lato", sans-serif;
-    }
-    
-    .sidebar {
-     font-family: "Lato", sans-serif;
-      margin: 0;
-      padding: 0;
-      width: 200px;
-      background-color: #b32e4f;
-      position: fixed;
-      height: 100%;
-      overflow: auto;
-    }
-    
-    .sidebar a {
-      display: block;
-      color: greenyellow;
-      padding: 16px;
-      text-decoration: none;
-    }
-     
-    .sidebar a.active {
-      background-color: #66043d;
-      color: white;
-    }
-    
-    .sidebar a:hover:not(.active) {
-      background-color: rgb(56, 13, 26);
-      color: greenyellow;
-    }
-    
-    div.content {
-      font-family: 'Luxurious Roman', cursive;
-      margin-left: 200px;
-      padding: 1px 16px;
-      height: 1000px;
-    }
-    
-    @media screen and (max-width: 700px) {
-      .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-      }
-      .sidebar a {float: left;}
-      div.content {margin-left: 0;}
-    }
-    
-    @media screen and (max-width: 400px) {
-      .sidebar a {
-        text-align: center;
-        float: none;
-      }
-    }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dobozolás</title>
 </head>
-<body style="background-color: darksalmon;">
-    <div class="sidebar">
-        <a class="active" href="https://eszter691.github.io/kollazs/">Kollázs</a>
-        <a href="https://eszter691.github.io/kollazs/keplink.html">Képlink</a>
-        <a href="https://eszter691.github.io/kollazs/listak.html">Listák</a>
-        <a href="https://eszter691.github.io/kollazs/orarend.html">Órarend</a>
-      </div>
+<body>
+    <div class="content">
+    <h1>Ez egy DIV dobozolás bemutató oldal. :)</h1>
+            <div class="box1"></div>
+            <p id="center">box1</p>
+            <div class="box2"></div>
+            <p id="center">box2</p>
+    </div>
 
-<div class="content">
-<h1 style="color: midnightblue;">Juhász Eszter</h1>
-<h2 style="color: mediumvioletred;">Juhász Eszter</h2>
-<h3 style="color: palevioletred;">Juhász Eszter</h3>
-<h4 style="color: steelblue;">Juhász Eszter</h4>
-<h5 style="color: darkcyan;">Juhász Eszter</h5>
-
- 
-
-<p>A kollázs képem:</p>
-<img src="https://raw.githubusercontent.com/Eszter691/kollazs/main/-.jpg" alt="Ezen a képen látható az én kollázsom" width=500>
-</div>
+    </div>
 </body>
 </html>
